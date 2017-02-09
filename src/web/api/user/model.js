@@ -1,0 +1,37 @@
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments)).next());
+    });
+};
+class User {
+    constructor(user) {
+        this.username = user.username;
+        this.password = user.password;
+        this.salt = user.salt;
+        this.created = user.created;
+        this.init();
+    }
+    init() {
+        return __awaiter(this, void 0, void 0, function* () {
+            this.hash = yield this.hashPassword();
+            this.isHashValid = this.checkPassword();
+        });
+    }
+    validate() {
+        return true;
+    }
+    hashPassword() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return '';
+        });
+    }
+    checkPassword() {
+        return true;
+    }
+}
+exports.User = User;
+//# sourceMappingURL=model.js.map

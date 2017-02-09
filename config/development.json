@@ -1,0 +1,35 @@
+{
+    "app": {
+        "host": "http://localhost",
+        "port": 4000,
+        "lastAddedCount": 10,
+        "pageSize": 10
+    },
+    "db": {
+        "protocol": "mongodb",
+        "host": "localhost",
+        "port": 27017,
+        "db": "regexps",
+        "max": 100,
+        "min": 1,
+        "timeout": 30000,
+        "log": false
+    },
+    "passport": {
+        "facebook": {
+            "clientId": "",
+            "clientSecret": "",
+            "callbackURL": "/auth/facebook/callback"
+        },
+        "google": {
+            "clientId": "",
+            "clientSecret": "-CGL",
+            "callbackURL": "/auth/google/callback"
+        },
+        "github": {
+            "clientId": "",
+            "clientSecret": "",
+            "callbackURL": "/auth/github/callback"
+        }
+    }
+}
