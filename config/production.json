@@ -11,7 +11,7 @@
         "port": 27017,
         "user": "admin",
         "pass": "123456",
-        "db": "regexps",
+        "db": "test",
         "max": 100,
         "min": 1,
         "timeout": 30000,
@@ -19,18 +19,18 @@
     },
     "passport": {
         "facebook": {
-            "clientId": "1454566564873727",
-            "clientSecret": "b18d3f94ff504b1fc39a6bbc4db7c016",
+            "clientId": "",
+            "clientSecret": "",
             "callbackURL": "/auth/facebook/callback"
         },
         "google": {
-            "clientId": "50859806083-g7an17dgduk64703po5d2ifar0o2skeu.apps.googleusercontent.com",
-            "clientSecret": "2YCDRGewCTGSgIN5a94X-CGL",
+            "clientId": "",
+            "clientSecret": "",
             "callbackURL": "/auth/google/callback"
         },
         "github": {
-            "clientId": "e7599265072fc33ec67d",
-            "clientSecret": "187809fd5bbc35fc3bbfddd48820ba7618b864b8",
+            "clientId": "",
+            "clientSecret": "",
             "callbackURL": "/auth/github/callback"
         }
     }

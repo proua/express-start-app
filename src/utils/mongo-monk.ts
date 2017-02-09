@@ -5,7 +5,6 @@ import * as chalk from 'chalk';
 const dbConfig = configuration.db as any;
 
 const getUrl = (): string => {
-    // /mongodb://admin:123456@localhost:27017/test
     let mongoUrl = '';
     if (dbConfig.user && dbConfig.pass) {
         mongoUrl =

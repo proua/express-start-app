@@ -29,24 +29,8 @@ class Routes {
 
         this.app.route('/*')
             .get((req: Request, res: Response) => {
-                // res.sendFile(path.resolve(`${app.get('appPath')}/index.html`));
                 res.sendFile(path.resolve('client/index.html'));
             });
-
-        // TODO: my setup
-        // app.use(function (err, req, res) {
-        //     console.error(err.stack);
-        //     res.status(500).send('Something broke!');
-        // });
-        //
-        // //error handling, keep last in middleware
-        // app.use((req, res, next) => {
-        //     // const error = {
-        //     //     message: err.message,
-        //     //     err: process.env.NODE_ENV === 'development' ? err : {}
-        //     // };
-        //     res.status(404).json({ statusCode: 404 });
-        // });
 
         // TODO: from internet
         if (this.app.get('env') === 'production') {

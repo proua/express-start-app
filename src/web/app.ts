@@ -36,17 +36,6 @@ class App {
         this.express.use(cookieParser());
         this.express.use(methodOverride());
 
-        // this.express.use(session({
-        //     secret: appConfig.sessionKey,
-        //     cookie: {
-        //         path: '/',
-        //         httpOnly: true,
-        //         secure: false,
-        //         maxAge: null
-        //     },
-        //     resave: false,
-        //     saveUninitialized: true
-        // }));
         this.express.use(passport.initialize());
         new Passport(passport);
 
@@ -57,8 +46,7 @@ class App {
     }
 
     private security (): void {
-        // security
-        // this.express.use(lusca.csrf());
+        this.express.use(lusca.csrf());
         this.express.use(lusca.csp( { policy: { 'default-src': '*' } } ));
         this.express.use(lusca.xframe('SAMEORIGIN'));
         this.express.use(lusca.p3p('ABCDEF'));

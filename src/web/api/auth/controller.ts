@@ -27,10 +27,6 @@ class AuthController implements IAuthController {
         } catch (error) {
             handleError(res, 400)(error);
         }
-        // authService
-        //     .login(req.body.username, req.body.password)
-        //     .then(respondWithResult)
-        //     .catch(handleError);
     }
 }
 

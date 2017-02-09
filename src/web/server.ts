@@ -6,8 +6,6 @@ import * as http from 'http';
 import { configuration } from '../config';
 import * as chalk from 'chalk';
 
-// -or- Equivalent to above, but allows customization of Promise library
-// require('any-promise/register')('bluebird', { Promise: require('bluebird') });
 
 const appConfig = configuration.app as any;
 
